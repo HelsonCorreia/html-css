@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em html 5</title>
+</head>
+<body>
+<h1>Mídias em HTML 5</h1>        
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminui o tamanho do seu navegador</p>
+        <picture>
+            <source media="(max-width: 550px )" srcset="imagens/foto-mp.png" type="image/png">
+            <source media="(max-width: 750px )" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050px )" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem flexível">
+        </picture>
+        <h1>Reproduzindo Áudio</h1>
+        <p>Vamos aprender a colocar áudio em HTML5.</p>
+        <p>Curtam um pouco da música if were</p>
+       <audio preload="metadata" controls autoplay loop>
+        <source src="midia/37- if i-were.mp3" type="audio/mpeg">
+        <source src="midia/37- if i-were.ogg" type="audio/ogg">
+        <source src="midia/37- if i-were.wav" type="audio/wav">
+            <p>Infelizmente não conseguimos reproduzir</p>
+<a href="midia/37- if i-were.mp3">Clique aqui para baixar o arquivo mp3</a>
+</audio>
+
+<br>
+    <p>Curtam um pouco da música tá tudo bem do toy toy t-rex</p>
+    <audio src="midia/y2mate.com - TRex  TA TUDO BEM.mp3"controls autoplay></audio>
+</br>
+        
+</body>
+</html>
