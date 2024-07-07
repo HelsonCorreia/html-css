@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <form action="index.html" method="post">
+        <p>
+            <label for="est">Estado: </label>
+            <select name="estado" id="est">
+                <option value="" selected>---Escolha---</option>
+               <option value="Luanda">Luanda</option>
+               <optgroup label="Inicial B">
+                   <option value="Bengo" >Bengo</option>
+                   <option value="Benguela">Benguela</option>
+               </optgroup>
+               <option value="Cunene">Cunene</option>
+               <option value="Moxico">Moxico</option>
+            </select>
+        </p>
+        <p>
+            <label for="sms">SMS: </label>
+            <textarea name="sms" id="sms" cols="30" rows="10" placeholder="Digite sua SMS"></textarea>
+        </p>
+        <p>
+            <label for="prof">Profissao: </label>
+            <input type="text" name="" id="prof" list="lista">
+            <datalist id="lista">
+                <option value="dev">Desenvolvedor</option>
+                <option value="prof">Professor</option>
+            </datalist>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

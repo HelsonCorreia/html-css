@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Usando o range</h1>
+    <form action="index.html" method="get">
+        <p>
+            <label for="ano">Em que ano vc nasceu? </label>
+            <input type="number" name="" id="ano" min="1920" max="2024" oninput="calcular()">
+        </p>
+
+        <p>
+            <label for="idade">Idade: </label>
+            <output id="idade">0</output>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+    <script>
+        function calcular(){
+            let ano=Number(document.getElementById('ano').value)
+            let actual=new Date()
+            data=actual.getFullYear()
+            let idade_user=data-ano
+           idade.innerHTML=`Sua idade é ${idade_user}`
+            
+        }
+
+
+    </script>
+</body>
+</html>
