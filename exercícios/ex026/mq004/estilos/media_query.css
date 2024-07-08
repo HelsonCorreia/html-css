@@ -1,0 +1,84 @@
+@charset "UTF-8";
+/* Todas as outras mídias */
+
+/* Typical device breakpoints 
+pequenas telas: até 600px
+celular: de 600px até 768px
+tablet: 768px até 992px 
+desktop: 992px até 1200px
+grandes telas: acima de 1200px
+*/
+
+@media print{
+    *{
+        font-family: 'Courier New', Courier, monospace;
+    }
+    body{
+        background-image: url('../imagens/back-print.jpg'); /* Na impressora o background-image não actua*/
+    }
+
+    main{
+        border: 2px solid black;
+    }
+
+    main h1{
+        text-shadow: none;
+        color: white;
+    }
+
+    main::after{
+        content: 'Esse site foi criado pela HELCORR TEC';
+        text-decoration: overline;
+        width: 90vw;
+    }
+
+    #print{
+        display: block;
+    }
+
+    #phone, #tablet, #pc, #tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 992px){ /*Tablet*/
+    body{
+        background-image: url('../imagens/back-tablet.jpg');
+    }
+
+    #tablet{
+        display: block;
+    }
+
+    #phone, #print, #pc, #tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px){ /*desktop*/
+    body{
+        background-image: url('../imagens/back-pc.jpg');
+    }
+
+    #pc{
+        display: block;
+    }
+
+    #phone, #print, #tablet, #tv{
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1200px){ /*grandes telas*/
+    body{
+        background-image: url('../imagens/back-tv.jpg');
+    }
+
+    #tv{
+        display: block;
+    }
+
+    #phone, #print, #pc, #tablet{
+        display: none;
+    }
+}
