@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px){
+    #burguer{
+        display: none;
+    }
+
+    menu{
+        display: block;
+        
+    }
+
+    menu ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    menu li{
+        display: inline-block; 
+        text-align: center;
+        /* isso vai fazer com que se tornem pequenos e fiquem um do lado do outro
+        */
+        
+        padding: 0 5px 10px 5px;
+        
+    }
+
+    main{
+        width: 600px;
+    }
+}
